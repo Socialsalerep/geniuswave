@@ -1,0 +1,318 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e67e22;
+    --background-color: #ecf0f1;
+    --text-color: #333333;
+    --light-text-color: #ffffff;
+    --card-background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+.cta-top {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.cta-top .apply-now {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .cta-top {
+        margin: 30px 0 50px;
+    }
+
+    .cta-top .apply-now {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+section {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.supporting-studies {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logos img:hover {
+    filter: grayscale(0%);
+}
+
+.brain-power p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.ritual ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ritual li::before {
+    content: "✓";
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.study {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+}
+
+.result {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.highlight {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cta-mid, .cta-bottom {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.apply-now {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apply-now:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+.img1{
+width: 100%;
+border-radius: 10px;
+opacity: 0.8;
+}
+.play_btn{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive design */
+@media screen and (min-width:200px){
+    .logos img{
+        max-width: 100px;
+        margin-left: 3%;
+    }
+}
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .logos img {
+        max-width: 100px;
+        margin-left: 3%;
+    }
+
+    .highlight {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    header {
+        padding: 60px 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .logos {
+        gap: 30px;
+    }
+
+    .highlight {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Ensure touch targets are large enough on mobile */
+@media (hover: none) and (pointer: coarse) {
+    button, 
+    input[type="submit"],
+    input[type="button"],
+    .ritual li,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
