@@ -185,7 +185,17 @@ opacity: 0.8;
     cursor: pointer;
     width: 30%;
 }
+.nasa-logo {
+    max-width: 120px;  /* Adjust the size as needed */
+    display: block;
+    margin: 0 auto 20px; /* Centers the logo and adds some space below it */
+    opacity: 0.9; /* Slightly reduces opacity for a soft blending effect */
+    transition: opacity 0.3s ease; /* Smooth transition effect on hover */
+}
 
+.nasa-logo:hover {
+    opacity: 1; /* Restores full opacity on hover */
+}
 /* Animations */
 @keyframes fadeInUp {
     from {
